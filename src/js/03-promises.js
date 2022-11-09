@@ -13,9 +13,9 @@ const onSubmit = (e) => {
   //  ...preventing a page from reloading...
   e.preventDefault();
   // ...destructuring three names from form inputs...
-  let { delay, step, amount } = onDataObj(form);
+  let {delay, step, amount} = onDataObj(form);
   // for each number in the amount...
-  for (let i = 0; i < amount; i++) {
+  for(let i = 0; i < amount; i++) {
       //...we're creating a promise with dynamic delay
     createPromise(i, delay)
       //...if it resolves, plays happy ending
